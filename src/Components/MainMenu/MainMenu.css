@@ -1,0 +1,22 @@
+@import url("https://mitra-ui.netlify.app/styles.css");
+@import url("https://mitra-ui.netlify.app/components.css");
+
+.cart > i {
+  color: white;
+  margin-right: 1rem;
+  padding-right: 0;
+}
+.wishlist > i {
+  color: white;
+  padding-right: 0;
+}
+
+.count {
+  background-color: #161d6f;
+  font-weight: 900;
+}
+
+.login,
+.logout {
+  margin-right: 2rem;
+}
