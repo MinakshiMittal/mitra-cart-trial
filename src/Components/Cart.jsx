@@ -1,5 +1,5 @@
 import { useProduct } from "../Context/product-context";
-import { ShowCartItem } from "./ShowCartItem.js";
+import { ShowCartItem } from "./ShowCartItem";
 
 export const Cart = () => {
   const { itemsInCart } = useProduct();

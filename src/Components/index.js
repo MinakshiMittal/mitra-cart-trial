@@ -11,3 +11,5 @@ export { Wishlist } from "./Wishlist";
 export { WishlistHeader } from "./WishlistHeader";
 export { Login } from "./Login";
 export { PrivateRoute } from "./PrivateRoute";
+export { ProductDetails } from "./ProductDetails";
+export { ProductListingPage } from "./ProductListingPage";

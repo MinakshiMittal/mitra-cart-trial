@@ -2,12 +2,13 @@ import "./styles.css";
 import { MainMenu } from "./Components/MainMenu/MainMenu";
 import {
   Cart,
-  ProductCard,
+  ProductDetails,
   Wishlist,
   Checkout,
   Toast,
   Login,
-  PrivateRoute
+  PrivateRoute,
+  ProductListingPage
 } from "./Components/index.js";
 import { useSortBy } from "./Context/sortBy-context";
 import { useFilter } from "./Context/filter-context";
@@ -58,11 +59,15 @@ export default function App() {
 
       <Routes>
         <PrivateRoute path="/cart" element={<Cart />} />
-        <Route
+        {/* <Route
           path="/"
           element={<ProductCard to={"/"} filteredData={filteredData} />}
+        /> */}
+        <Route
+          path="/"
+          element={<ProductListingPage filteredData={filteredData} noDetail />}
         />
-        <Route path="/" element={<ProductCard filteredData={filteredData} />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
         <PrivateRoute path="/wishlist" element={<Wishlist />} />
         <Route path="/checkout" element={<Checkout />} />
         {!isUserLoggedIn && <Route path="/login" element={<Login />} />}
