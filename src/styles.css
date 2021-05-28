@@ -1,0 +1,16 @@
+@import "https://mitra-ui.netlify.app/components.css";
+@import "https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css";
+@import "https://use.fontawesome.com/releases/v5.15.3/css/all.css";
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+body {
+  display: grid;
+  grid-template-areas: "head head" "nav main" "nav main";
+  grid-template-rows: 1% 1fr;
+  position: relative;
+  font-family: "Varela Round", sans-serif;
+}

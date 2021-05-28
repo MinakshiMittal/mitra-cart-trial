@@ -1,2 +1,2 @@
-# mitraCart
-e-commerce app
+# mitra-cart
+Created with CodeSandbox
